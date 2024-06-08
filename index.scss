@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 768px;
+    color: whitesmoke;
+    background-color: #28282B;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.header {
+    padding: 1em;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+
+    &__title {
+        font-size: 4em;
+        font-weight: 700;
+    }
+}
+
+
+.section {
+    padding: 1rem;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+
+    &__answer {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    &__body {
+        gap: 1rem;
+        display: flex;
+        font-size: 1rem;
+        padding-top: 1em;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        &--client {
+            flex: 1;
+            gap: 0.5em;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--label {
+            font-size: 1.5em;
+        }
+
+        &--input {
+            height: 2em;
+            width: 10%;
+            border: none;
+            font-size: 1em;
+            border-radius: 4px;
+            padding: 0.25em 1em;
+            border: 2px solid gray;
+
+            &:focus {
+                outline: none;
+                border: 2px solid indigo;
+            }
+        }
+
+        &--buttons {
+            gap: 1em;
+            display: flex;
+            font-size: 1rem;
+        }
+
+        &--resetBtn {
+            @extend .btn-attr;
+            color: whitesmoke;
+            background-color: #28282B;
+
+            &:hover {
+                background-color: rgb(150, 150, 150, 75%)
+            }
+        }
+
+        &--guessBtn {
+            @extend .btn-attr;
+            color: #28282B;
+            background-color: whitesmoke;
+
+            &:hover {
+                background-color: rgb(150, 150, 150, 75%)
+            }
+        }
+    }
+
+    &__rules {
+        font-weight: 700;
+        font-size: 1.25em;
+        text-align: center;
+        color: rgb(120, 120, 120);
+    }
+}
+
+
+.btn-attr {
+    border: none;
+    font-size: 1.5em;
+    margin-top: 1.125em;
+    border-radius: 10px;
+    padding: 0.25em 0.25em;
+}

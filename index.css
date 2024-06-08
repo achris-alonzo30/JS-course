@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 768px;
+  color: whitesmoke;
+  background-color: #28282B;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+  padding: 1em;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
+}
+.header__title {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.section {
+  padding: 1rem;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
+}
+.section__answer {
+  font-size: 2em;
+  font-weight: 700;
+}
+.section__body {
+  gap: 1rem;
+  display: flex;
+  font-size: 1rem;
+  padding-top: 1em;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.section__body--client {
+  flex: 1;
+  gap: 0.5em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section__body--label {
+  font-size: 1.5em;
+}
+.section__body--input {
+  height: 2em;
+  width: 10%;
+  border: none;
+  font-size: 1em;
+  border-radius: 4px;
+  padding: 0.25em 1em;
+  border: 2px solid gray;
+}
+.section__body--input:focus {
+  outline: none;
+  border: 2px solid indigo;
+}
+.section__body--buttons {
+  gap: 1em;
+  display: flex;
+  font-size: 1rem;
+}
+.section__body--resetBtn {
+  color: whitesmoke;
+  background-color: #28282B;
+}
+.section__body--resetBtn:hover {
+  background-color: rgba(150, 150, 150, 0.75);
+}
+.section__body--guessBtn {
+  color: #28282B;
+  background-color: whitesmoke;
+}
+.section__body--guessBtn:hover {
+  background-color: rgba(150, 150, 150, 0.75);
+}
+.section__rules {
+  font-weight: 700;
+  font-size: 1.25em;
+  text-align: center;
+  color: rgb(120, 120, 120);
+}
+
+.btn-attr, .section__body--resetBtn, .section__body--guessBtn {
+  border: none;
+  font-size: 1.5em;
+  margin-top: 1.125em;
+  border-radius: 10px;
+  padding: 0.25em 0.25em;
+}/*# sourceMappingURL=index.css.map */

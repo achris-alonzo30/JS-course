@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess A Number</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script type="module" src="./scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Guess A Number</h1>
+    </header>
+    <section class="section">
+        <p class="section__answer"></p>
+        <form id="form" class="section__body">
+            <aside class="section__body--client">
+                <label for="guess" class="section__body--label">Pick A Number:</label>
+                <input required min="0" max="100" id="guess" name="guess" type="number" class="section__body--input" />
+            </aside>
+            <aside class="section__body--buttons">
+                <button type="button" class="section__body--resetBtn">RESET</button>
+                <button type="submit" class="section__body--guessBtn">GUESS</button>
+            </aside>
+            
+        </form>
+    </section>
+    <p class="section__rules">You have 3 tries to guess the number.</p>
+</body>
+
+</html>
